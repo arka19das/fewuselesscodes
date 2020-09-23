@@ -31,7 +31,9 @@ void inOrder(struct Node *root)
         /* Reach the left most Node of the 
            curr Node */
       curr = s.top(); 
+      
         s.pop(); 
+      if(curr==NULL) continue;
       if(curr->right==NULL && curr->left==NULL){
         cout<<curr->data<<" ";continue;}  
       
